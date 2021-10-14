@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box; /* 
+    border-box se asegura de que el contenido, el relleno y los bordes quepan en este número */
+
+    
+
+}
+
+head { 
+    display: none;
+}
+
+.col-12{
+    width: 100%; /*aplicamos a que tome las 12 columnas quienes tengan que hacerlo */
+
+}
+
+body{ /* lineamientos generales */
+    font: 15px Sans-serif;
+    line-height:150%;
+    }
+    
+.row{ /* la clase que nos indica el tamaño de nuestro contenedor principal */
+    margin: auto;
+    max-width: 1000px;
+    border: 1px solid rgba(241, 85, 13, 0.924);
+    
+    }
+
+
+/* limpiar capas flotantes dentro de la capa contenedora*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* para que columnas se acomoden */
+[class*="col-"] {
+    float: left;
+    
+    padding: 2px; /* afecta el pading de todos los divs */
+  /*  border: 1px solid red; */ /* para ver delimitación de los divs */
+}
+
+
+    /* capa menú */
+
+nav{
+    background-color:#36c9dd;  /* fondo del menú */
+    padding: 30px;
+    width: 100%;
+    }
+
+    /* formateando menu alterno que aparece cuando presiono menú hamburguesa */
+/* menú a partir de una lista y generando clase  por medio de la clase mn */
+.mn ul{
+    list-style-type: none;
+    color:white;
+    background-color:#36c9dd;
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    
+    .mn ul li{
+    text-align: left;
+     line-height: 35px;
+     margin-left: 10px;
+    }
+    
+    
+    .mn ul li a{
+    font: bold 15px Arial;
+    color: white; 
+    padding: 2px 16px;
+    text-decoration: none;
+    }
+     
+    .mn ul li:hover:not(.active){
+    color:blue;
+    background-color:#173A64;
+    }
+    
+    .mn ul li a.active{
+    cursor:default;
+    background-color:white;
+    color:blue;
+    font: bold;
+    padding:2px 100px 2px 16px;
+    }
+    
+    
+    .mn li a.active2 {
+        background-color:#2E62A1;
+        font-weight: bold;
+        color:yellow;
+     }
+    
+    .mn li a.active3 {
+        background-color:black;
+        font-weight: bold;
+        color:yellow;
+        
+     }
+
+section{
+        padding: 20px;
+        text-align:justify;
+        max-width: 100%;
+    
+        }
+        .col-9 {width: 75%;}
+    
+    .cov{
+       max-width: 100%;
+       height: auto;
+        
+    }
+    
+    .tit{
+        display: flex;
+        color: red;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .del{
+        text-align: center;
+        font-size: 90px;
+        color: White;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+     p {
+         text-align: left;
+         color: aliceblue;
+         font-size: 65 px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         background-color: #173A64;
+         background-attachment: fixed;
+         border-radius: 5%;
+
+
+    }
+    /*Aquí le damos formato al video */
+    ifrane{
+
+        align-items: center;
+        justify-content: center;
+        border: 3px white;
+        max-width: 100%;
+    }
+    
+    /*Para mantener bien estructurado le damos formato al aside */
+aside{
+    background-color:white;
+    margin:0px;
+    float: right;
+
+    }
+    .col-3 {width: 25%;}
+
+    .asi{
+        text-align:center;
+        padding:20px;
+        }
+        
+        
+        .asi br {
+        display:inline;
+        }
+
+/* Le damos color y formato al pie de página */
+footer{
+        background-color:#2E62A1;
+        color: white;
+        padding:20px;
+        border: 1px solid black;
+        display: flex;
+        flex: auto;
+        }
+
+
+
+/* footer con máximo de 1000 px */
+footer {
+    max-width: 1000px;
+    margin:auto;
+    
+    }
+
+
+    
+    
+    
+
+     /* cargando imagen más grande para logotipo de cabecera  */
+.lg {
+    background-image: url("imagenes/logo2.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    height: 132px;
+    }
+
+    /* menú desparece */
+nav{
+    padding:0px;
+    height: 0px;
+    height: 60px;
+    }
+
+    .img{
+
+        max-width: 50%;
+    }
+
+    .img2{
+        max-width: 100%;
+    }
+
+    .Redes{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        color: Black;
+    }
+    .Contacto{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        color: Black;
+
+    }
+    
+    
+    .sec{
+    padding-bottom: 150px;
+    background-color: white;
+    background-image: url("Imagenes/1.3.jpg");
+    background-repeat: no-repeat;
+    margin: 0px auto 0px auto;
+    background-attachment: fixed;
+    background-position: center;
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+

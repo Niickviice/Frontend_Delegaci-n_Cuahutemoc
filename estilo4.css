@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+
+    
+
+}
+
+head { 
+    display: none;
+}
+
+.col-12{
+    width: 100%;
+
+}
+
+body{
+    font: 15px Sans-serif;
+    line-height:150%;
+    }
+    
+.row{
+    margin: auto;
+    max-width: 1000px;
+    border: 1px solid rgba(241, 85, 13, 0.924);
+    background-image: url(imagenes/1.3.jpg);
+    
+    
+    }
+
+
+/* limpiar capas flotantes dentro de la capa contenedora*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* para que columnas se acomoden */
+[class*="col-"] {
+    float: left;
+    
+    padding: 2px; /* afecta el pading de todos los divs */
+  /*  border: 1px solid red; */ /* para ver delimitación de los divs */
+}
+
+
+    /* capa menú */
+
+nav{
+    background-color:#36c9dd;  /* fondo del menú */
+    padding: 30px;
+    width: 100%;
+    }
+
+    /* formateando menu alterno que aparece cuando presiono menú hamburguesa */
+/* menú a partir de una lista y generando clase  por medio de la clase mn */
+.mn ul{
+    list-style-type: none;
+    color:white;
+    background-color:#36c9dd;
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+    
+    .mn ul li{
+    text-align: left;
+     line-height: 35px;
+     margin-left: 10px;
+    }
+    
+    
+    .mn ul li a{
+    font: bold 15px Arial;
+    color: white; 
+    padding: 2px 16px;
+    text-decoration: none;
+    }
+     
+    .mn ul li:hover:not(.active){
+    color:blue;
+    background-color:#173A64;
+    }
+    
+    .mn ul li a.active{
+    cursor:default;
+    background-color:white;
+    color:blue;
+    font: bold;
+    padding:2px 100px 2px 16px;
+    }
+    
+    
+    .mn li a.active2 {
+        background-color:#2E62A1;
+        font-weight: bold;
+        color:yellow;
+     }
+    
+    .mn li a.active3 {
+        background-color:black;
+        font-weight: bold;
+        color:yellow;
+        
+     }
+     .lg {
+        background-image: url("imagenes/logo2.jpg");
+        background-repeat: no-repeat;
+        background-color: white;
+        height: 132px;
+        }
+
+    .container{
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+        
+   }
+
+    .container .act{
+        text-align: center;
+        font-size: 80px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    .container.ul{
+        display: inline-block;       
+    }
+
+    .container ul li{
+        list-style: none;
+        float: left;
+        width: 35%;
+        height: 300px;
+        background: rgb(30, 124, 212);
+        margin: 5px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #36c9dd;
+
+        
+    }
+
+    .container ul li .title{
+     width: 100%;
+     height: 50px;
+     line-height: 50px;
+     background: white;
+     text-align: center;
+     font-size: 25px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: #2E62A1;
+
+    }
+
+    .container ul li:hover{
+        opacity: 0.9;
+    }
+
+    .container ul li .imga{
+        width: 100%;
+        height: 84%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition: all 0.5s linear;
+        
+    }
+    .imga:hover{
+        transform: scale(0.9);
+    }
+    
+   
+
+        .Requisitos{
+        
+            background: white;
+            padding: 10px;
+            overflow: scroll;
+            border-style: solid;
+           
+            
+            
+    
+          
+
+            
+            
+        }
+        .req{
+            width: 100%;          
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 35px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #2E62A1;
+
+        }
+
+        .izquierda {
+            float: left;
+            margin: auto;
+            width: 50%;
+           
+           
+
+          
+     
+    }
+    .derecha{
+        float:right;
+        width: 50%;
+        
+    }
+
+    .we{
+        font-size: 50px;
+        color: #173A64;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+        
+
+
+        .Requisitos ul li .pi{
+
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(44, 112, 190);
+            
+          
+        
+        }
+
+
+
+
+    footer{
+        background-color:#2E62A1;
+        color: white;
+        padding:20px;
+        border: 1px solid black;
+        display: flex;
+        flex: auto;
+        }
+
+
+
+/* footer con máximo de 1000 px */
+footer {
+    max-width: 1000px;
+    margin:auto;
+    
+    }
+
+    @media screen and (max-width:1200px){
+        .container ul li {
+            width: 40%;
+            margin: 40px;
+        }

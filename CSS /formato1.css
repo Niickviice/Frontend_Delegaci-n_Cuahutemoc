@@ -1,0 +1,25 @@
+body{
+
+	background-color: hsl(97, 23%,17%); 
+	color:  hsl(110,12%,39%); 
+}
+
+p {
+ background-color:red;
+ color:orange;
+ font-family: verdana;
+ font-weight: bold;
+ font-size: 35px;
+ font-style: unset;
+ text-align: center;
+ text-indent: 90px;
+ padding:40px 50px;
+}
+
+span{
+ color:purple;
+ font-size:53px;
+ font-weight: initial;
+ text-shadow: 5px 9px 10px blue;
+}
+

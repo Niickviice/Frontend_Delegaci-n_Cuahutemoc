@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(69, 104, 199);
+}
+
+.box{
+    padding-left: 2cm;
+    padding-top: 4cm;
+    padding-right: 2cm;
+
+}
+
+.headers{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font: outline;
+    text-align: center;
+}
+
+.text{
+    color: rgba(214, 16, 16, 0.794);
+    text-align: justify;
+    background-color: antiquewhite;
+    font-size: 20px;
+}
+
+
+#parrafoverde{
+    background-color: green;
+    color: rgb(231, 35, 172);
+}
